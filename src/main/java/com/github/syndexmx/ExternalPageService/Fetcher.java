@@ -21,7 +21,7 @@ public class Fetcher {
         StringBuilder outerList = new StringBuilder();
         StringBuilder innerList = new StringBuilder(String.valueOf(listFromUrl(url)));
         outerList.append(innerList);
-        int pageCount=2;
+        int pageCount = 2;
         do {
             String pageUrl = url + "?p=" + pageCount;
             innerList = new StringBuilder(String.valueOf(listFromUrl(pageUrl)));

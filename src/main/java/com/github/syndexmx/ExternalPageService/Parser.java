@@ -44,7 +44,7 @@ public class Parser {
 
     private static String extractProgramTitle(String string) {
         String title = string.substring(string.indexOf("created:"));
-        title = title.substring(title.indexOf("title:")+6);
+        title = title.substring(title.indexOf("title:") + 6);
         title = title.substring(0, title.indexOf(",isExpired"));
         if (title.contains(",path:")){
             title = title.substring(0, title.indexOf(",path"));
